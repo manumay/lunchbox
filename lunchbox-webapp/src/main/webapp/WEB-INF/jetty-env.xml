@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://jetty.mortbay.org/configure.dtd">
+
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
+
+	<New id="DSLunchbox" class="org.eclipse.jetty.plus.jndi.Resource">
+		<Arg></Arg>
+		<Arg>jdbc/DSLunchbox</Arg>
+		<Arg>
+			<New class="com.jolbox.bonecp.BoneCPDataSource">
+				<Set name="driverClass">org.apache.derby.jdbc.EmbeddedDriver</Set>
+				<Set name="jdbcUrl">jdbc:derby:lunchbox;create=true</Set>
+				<Set name="username">lunchbox</Set>
+				<Set name="password">lunchbox</Set>
+				<Set name="minConnectionsPerPartition">1</Set>
+				<Set name="maxConnectionsPerPartition">10</Set>
+			</New>
+		</Arg>
+	</New>
+
+</Configure>

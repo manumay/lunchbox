@@ -1,0 +1,1 @@
+package org.brainteam.lunchbox.scheduler;import org.brainteam.lunchbox.cmd.ImportMenuCommand;public class ImportMenuJob extends BackgroundActionJob {	public ImportMenuJob() {		super(ImportMenuCommand.class);	}}

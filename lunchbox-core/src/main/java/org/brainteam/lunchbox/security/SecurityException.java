@@ -1,0 +1,1 @@
+package org.brainteam.lunchbox.security;public class SecurityException extends RuntimeException {	private static final long serialVersionUID = 2764796615788216027L;	public SecurityException(String msg) {		super(msg);	}	}

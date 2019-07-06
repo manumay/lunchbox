@@ -1,0 +1,1 @@
+package org.brainteam.lunchbox.templates;public interface MailOrderTextTemplate extends TextTemplate {	String CREATION_DATE = "creationDate";	String ORDER_DATE = "orderDate";	String ORDER_INFO = "orderInfo";	}

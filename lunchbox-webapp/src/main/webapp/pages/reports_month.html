@@ -1,0 +1,64 @@
+<div class="loadingPanel" ng-class="{hidden:!loading}">
+	<div class="loading"><img src="img/loading.gif" valign="middle" alt="Loading" /></div>
+</div>
+<div id="alerts" class="container" ng-class="{hidden:loading}"></div>
+<div class="container" ng-init="loadOrdersForMonth()" ng-class="{hidden:loading}">
+	<div class="row">
+		<div class="span6">
+			<h3>Meine Bestellungen f&uuml;r {{ordersForMonth.month}}/{{ordersForMonth.year}}</h3>
+		</div>
+		<div class="span6 text-right">
+			<form class="form-horizontal" name="dateForm" style="margin-bottom:0;">
+				<div class="control-group input-append" style="margin-top: 14px;">
+					<select ng-model="selectedMonth" ng-change="loadOrdersForMonth(selectedMonth,selectedYear)" name="selectedMonth" style="width: 120px;">
+						<option value="1">Januar</option>
+						<option value="2">Februar</option>
+						<option value="3">M&auml;rz</option>
+						<option value="4">April</option>
+						<option value="5">Mai</option>
+						<option value="6">Juni</option>
+						<option value="7">Juli</option>
+						<option value="8">August</option>
+						<option value="9">September</option>
+						<option value="10">Oktober</option>
+						<option value="11">November</option>
+						<option value="12">Dezember</option>
+      				</select>
+      				<select ng-model="selectedYear" ng-change="loadOrdersForMonth(selectedMonth,selectedYear)" name="selectedYear" style="width: 80px;">
+      					<option>2013</option>
+      					<option>2014</option>
+      					<option>2015</option>
+      					<option>2016</option>
+      					<option>2017</option>
+      				</select>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<table id="report" class="table table-bordered table-hover table-striped">
+			<thead>
+				<tr>
+					<th>Tag</th>
+					<th>Menü</th>
+					<th class="table-hcenter">Preis</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="day in ordersForMonth.days">
+					<td class="span3 table-vmiddle">{{day.date | date:'EEEE, d. MMMM' }}</td>
+					<td class="span8 table-vmiddle">
+						<p class="no-margin" ng-show="day.items.length > 0" ng-repeat="item in day.items"><strong>{{item.offerItem.name}}:</strong> {{item.offerItem.headline}} <span ng-show="item.times > 1">({{item.times}}x)</span></p>
+						<p class="no-margin" ng-show="day.items.length == 0">-</p>
+					</td>
+					<td class="span1 table-vmiddle"><span ng-show="day.items.length > 0">{{day.sum / 100 | currency}}</span><span ng-show="day.items == null">-</span></td>
+				</tr>
+				<tr>
+					<td class="sum">&nbsp;</td>
+					<td class="sum table-hright">Summe</td>
+					<td class="sum">{{ordersForMonth.sum / 100 | currency}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

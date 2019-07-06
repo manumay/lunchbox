@@ -1,0 +1,1 @@
+package org.brainteam.lunchbox.security;import org.brainteam.lunchbox.domain.Order;public interface OrderSecurity extends DomainObjectSecurity<Order> {	}

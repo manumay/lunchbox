@@ -1,0 +1,1 @@
+package org.brainteam.lunchbox.services;import java.util.List;import org.brainteam.lunchbox.json.JsonOrdersBilling;import org.brainteam.lunchbox.json.JsonOrdersDaily;public interface MailService {	void mailBilling(List<JsonOrdersBilling> json);		void mailOrders(JsonOrdersDaily json);	}

@@ -1,0 +1,1 @@
+package org.brainteam.lunchbox.cmd;public interface Command {		String getName();	void execute() throws CommandException;	}

@@ -1,0 +1,1 @@
+package org.brainteam.lunchbox.templates;public interface MailBillingTextTemplate extends TextTemplate {	String BILLING_INFO = "info";	String CREATION_DATE = "creationDate";	String NAME_OF_MONTH = "nameOfMonth";	String YEAR = "year";	}

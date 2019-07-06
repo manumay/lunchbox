@@ -1,0 +1,1 @@
+package org.brainteam.lunchbox.security;public interface DomainObjectSecurity<T> {		String MERGE = "merge";	String DELETE = "delete";	void checkPermission(String key, T domainObject) throws SecurityException;	}

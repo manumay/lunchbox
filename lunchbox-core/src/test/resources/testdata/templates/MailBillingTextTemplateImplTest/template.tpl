@@ -1,0 +1,1 @@
+$creationDate,$nameOfMonth,$year,$info

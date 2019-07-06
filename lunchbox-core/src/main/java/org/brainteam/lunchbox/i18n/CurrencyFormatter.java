@@ -1,0 +1,1 @@
+package org.brainteam.lunchbox.i18n;public interface CurrencyFormatter {	String format(Long priceInCents);	}

@@ -1,0 +1,30 @@
+<div class="modal-header">
+	<h3>Mahlzeit</h3>
+</div>
+<div class="modal-body" ng-show="shouldDisplayErrorMessage()">
+	<div class="alert alert-error" style="margin-bottom: 0;">
+		<strong>Warnung!</strong> {{errorMessage}}
+	</div>
+</div>
+<div class="modal-body">
+	<form name="mealForm" class="modal-form">
+  		<fieldset>
+  			<div class="control-group" ng-class="{error:!mealForm.headline.$valid}">
+    			<label>Bezeichnung</label>
+    			<input name="headline" type="text" ng-model="meal.headline" placeholder="Bezeichnung..." required />
+    		</div>
+    		<div class="control-group" ng-class="{error:!mealForm.description.$valid}" >
+    			<label>Beschreibung</label>
+    			<textarea name="description" rows="6" class="field span6" ng-model="meal.description" placeholder="Beschreibung..."></textarea>
+    		</div>
+    		<div class="control-group" ng-class="{error:!mealForm.ingredients.$valid}">
+    			<label>Zusatzstoffe</label>
+    			<input name="ingredients" type="text" ng-model="user.fullName" placeholder="Zusatzstoffe..." class="input-xlarge" />
+    		</div>
+    	</fieldset>
+    </form>
+</div>
+<div class="modal-footer">
+	<button ng-click="cancel()" class="btn">Abbrechen</button>
+	<button ng-click="save(result)" class="btn btn-primary" ng-disabled="mealForm.$invalid">Speichern</button>
+</div>

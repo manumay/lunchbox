@@ -1,0 +1,1 @@
+package org.brainteam.lunchbox.scheduler;import org.brainteam.lunchbox.cmd.MailBillingCommand;public class MailBillingJob extends BackgroundActionJob {		public MailBillingJob() {		super(MailBillingCommand.class);	}}

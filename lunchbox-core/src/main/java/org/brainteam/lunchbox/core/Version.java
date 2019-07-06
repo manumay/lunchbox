@@ -1,0 +1,1 @@
+package org.brainteam.lunchbox.core;public class Version {	static final String UNINITIALIZED = "uninitialized";		static String version;		public static String get() {		if (version == null) {			return UNINITIALIZED;		}		return version;	}		public static void set(String version) {		Version.version = version;	}	}

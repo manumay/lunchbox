@@ -1,0 +1,1 @@
+update meal set meal.veggie=1 where meal.id in (select distinct offeritem.MEAL_ID from offeritem where offeritem.NAME='Menü 3')update meal set meal.salad=1 where meal.id in (select distinct offeritem.MEAL_ID from offeritem where offeritem.NAME='Salat')

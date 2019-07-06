@@ -1,0 +1,37 @@
+<div class="loadingPanel" ng-class="{hidden:!loading}">
+	<div class="loading"><img src="img/loading.gif" valign="middle" alt="Loading" /></div>
+</div>
+<div id="alerts" class="container" ng-class="{hidden:loading}"></div>
+<div class="container" ng-init="loadOrdersForDay()" ng-class="{hidden:loading}">
+	<div class="row">
+		<div class="span8">
+			<h3>Alle Bestellungen f&uuml;r {{ordersForDay.date | date:'EEEE, d. MMMM yyyy'}}</h3>
+		</div>
+		<div class="span1 text-right">
+			<button class="btn" ng-click="displayPdf()" ng-show="ordersForDay.items.length > 0" type="button" style="margin-top: 14px;"><i class="icon-print"></i></button>
+		</div>
+		<div class="span3 text-right">
+			<div class="form-horizontal">
+				<div class="control-group input-append" style="margin-top: 14px;">
+        			<input type="text" datepicker-popup="dd.MM.yyyy" ng-model="displayDate" is-open="opened" datepicker-options="dateOptions" 
+        				ng-required="true" class="input-small" ng-change="loadOrdersForDay()" data-language="de" /> 
+        			<button class="btn" ng-click="open()"><i class="icon-calendar"></i></button>
+    			</div>
+    		</div>
+		</div>
+	</div>
+	<div class="row" ng-hide="ordersForDay.items.length > 0">
+		<div class="container">
+			<p class="text-center" style="padding:50px;">F&uuml;r diesen Tag gibt es keine Bestellungen.</p>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span3 block" ng-repeat="item in ordersForDay.items | orderBy:'offerItem.name'" tooltip="{{item.offerItem.headline + ' ' + item.offerItem.description}}" 
+				tooltip-placement="bottom">
+			<div class="block-header">{{item.orderers.length}}x {{item.offerItem.name}}</div>
+			<ul>
+				<li ng-repeat="orderer in item.orderers">{{orderer.userName}} <span ng-show="orderer.times > 1">({{orderer.times}}x)</span></li>
+			</ul>
+		</div> 
+	</div>
+</div>

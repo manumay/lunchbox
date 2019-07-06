@@ -1,0 +1,1 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" ><suite name="Seleniumtests" verbose="1">    <parameter name="jetty.port" value="9999" />    <parameter name="selenium.browser" value="firefox"/>	<test name="Seleniumtests">		<packages>      		<package name="org.brainteam.lunchbox.selenium" />   		</packages>	</test></suite>

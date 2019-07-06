@@ -1,0 +1,139 @@
+{
+  "dailyOffers" : [ {
+    "date" : 1364166000000,
+    "meals" : [ {
+      "type" : "Menü 1",
+      "headline" : "Spaghetti",
+      "description" : "in Broccoli-Käse-Soße, geriebener Käse, Salat",
+      "ingredients" : "Zusatzstoffe: 1,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Menü 2",
+      "headline" : "Putengeschnetzeltes „Indische Art“",
+      "description" : "mit Curry und Früchten, Rosinenreis, Salat",
+      "ingredients" : "Zusatzstoffe:     1,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Menü 3",
+      "headline" : "Blumenkohl-Käsemedaillon",
+      "description" : "Soße Bearnaise, Kartoffeln, Salat",
+      "ingredients" : "Zusatzstoffe: 1,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Salat",
+      "headline" : "Angemachte Salate mit Schinken, Käse, Ei und Brötchen",
+      "description" : "",
+      "ingredients" : "",
+      "priceInCents" : 395
+    } ]
+  }, {
+    "date" : 1364252400000,
+    "meals" : [ {
+      "type" : "Menü 1",
+      "headline" : "",
+      "description" : "",
+      "ingredients" : "Zusatzstoffe: 0",
+      "priceInCents" : 395
+    }, {
+      "type" : "Menü 2",
+      "headline" : "OSTERMENÜ",
+      "description" : "Gefülltes Schweinefilet an feiner Rahmsoße, Butterspätzle, Salat, Osterdessert",
+      "ingredients" : "Zusatzstoffe: 1,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Menü 3",
+      "headline" : "OSTERMENÜ",
+      "description" : "Frisches Lachsfilet auf Blattspinat, Hollandaise, Bandnudeln, Osterdessert",
+      "ingredients" : "Zusatzstoffe: 1,6 0",
+      "priceInCents" : 395
+    }, {
+      "type" : "Salat",
+      "headline" : "Angemachte Salate mit Schinken, Käse, Ei und Brötchen",
+      "description" : "",
+      "ingredients" : "",
+      "priceInCents" : 395
+    } ]
+  }, {
+    "date" : 1364338800000,
+    "meals" : [ {
+      "type" : "Menü 1",
+      "headline" : "Schwäbische Linsen",
+      "description" : "Mit Saitenwurst und Bauernspätzle",
+      "ingredients" : "Zusatzstoffe: 1,2,3,4,5",
+      "priceInCents" : 395
+    }, {
+      "type" : "Menü 2",
+      "headline" : "Hähnchen „Maryland“",
+      "description" : "Soße mit Perlzwiebeln, Mais, Ananas, Tomate, Butterreis, Salat",
+      "ingredients" : "Zusatzstoffe: 1,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Menü 3",
+      "headline" : "Gemüsemaultaschen",
+      "description" : "an Kräutersoße, Gemischter Salat",
+      "ingredients" : "Zusatzstoffe: 1,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Salat",
+      "headline" : "Angemachte Salate mit Schinken, Käse, Ei und Brötchen",
+      "description" : "",
+      "ingredients" : "",
+      "priceInCents" : 395
+    } ]
+  }, {
+    "date" : 1364425200000,
+    "meals" : [ {
+      "type" : "Menü 1",
+      "headline" : "Schwäbischer Wurstsalat",
+      "description" : "mit Schwarzwurst, Gurken, Zwiebeln und Bratkartoffeln",
+      "ingredients" : "Zusatzstoffe: 1,2,3,4,5",
+      "priceInCents" : 395
+    }, {
+      "type" : "Menü 2",
+      "headline" : "Paniertes Schweineschnitzel",
+      "description" : "Soße Pommes frites, Außenstelle: Teigwaren, Salat",
+      "ingredients" : "Zusatzstoffe: 1,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Menü 3",
+      "headline" : "Forelle „Müllerin Art“",
+      "description" : "mit brauner Butter, Zitrone, Petersilienkartoffeln, Salat",
+      "ingredients" : "Zusatzstoffe: 1,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Salat",
+      "headline" : "Angemachte Salate mit Schinken, Käse, Ei und Brötchen",
+      "description" : "",
+      "ingredients" : "",
+      "priceInCents" : 395
+    } ]
+  }, {
+    "date" : 1364511600000,
+    "meals" : [ {
+      "type" : "Menü 1",
+      "headline" : "KARFREITAG",
+      "description" : "",
+      "ingredients" : "Zusatzstoffe: 0",
+      "priceInCents" : 395
+    }, {
+      "type" : "Menü 2",
+      "headline" : "KARFREITAG",
+      "description" : "",
+      "ingredients" : "Zusatzstoffe: 0",
+      "priceInCents" : 395
+    }, {
+      "type" : "Menü 3",
+      "headline" : "KARFREITAG",
+      "description" : "",
+      "ingredients" : "Zusatzstoffe: 0",
+      "priceInCents" : 395
+    }, {
+      "type" : "Salat",
+      "headline" : "Angemachte Salate mit Schinken, Käse, Ei und Brötchen",
+      "description" : "",
+      "ingredients" : "",
+      "priceInCents" : 395
+    } ]
+  } ],
+  "periodicOffers" : [ ]
+}

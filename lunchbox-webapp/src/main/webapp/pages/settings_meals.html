@@ -1,0 +1,57 @@
+<div class="loadingPanel" ng-class="{hidden:!loading}">
+	<div class="loading"><img src="img/loading.gif" valign="middle" alt="Loading" /></div>
+</div>
+<div id="alerts" class="container"></div>
+<div id="settings" class="container" ng-init="loadMeals()">
+	<div class="container">
+		<h3>Mahlzeiten</h3>
+        <form id="searchForm">
+  			<fieldset>
+    			<div class="row-fluid">
+    				<div class="span10 input-append">
+    					<input type="text" ng-model="search" placeholder="Stichwort..." class="input-xlarge"  ng-class="{error:!searchForm.search.$valid}">
+    					<button id="searchMeals" ng-click="filter()" ng-disabled="searchForm.$invalid" type="submit" class="btn btn-primary"><i class="icon-search icon-white"></i></button>
+    				</div>
+					<div class="span2 text-right">
+						<button class="btn" type="button" ng-click="openMealDialog()"><i class="icon-plus"></i></button>
+					</div>
+				</div>
+  			</fieldset>
+		</form>
+    </div>
+    <div class="container">
+    	<table class="table table-bordered table-hover table-striped" ng-hide="meals == undefined">
+			<thead>
+				<tr>
+					<th class="span3">
+						<a ng-click="sortBy('headline')">Bezeichnung</a>
+						<i class="icon-arrow-up" ng-show="sortedBy('headline', 'asc')" ng-click="switchSortDirection()"></i>
+						<i class="icon-arrow-down" ng-show="sortedBy('headline', 'desc')" ng-click="switchSortDirection()"></i>
+					</th>
+					<th class="span6">
+						<a ng-click="sortBy('description')">Beschreibung</a>
+						<i class="icon-arrow-up" ng-show="sortedBy('description', 'asc')" ng-click="switchSortDirection()"></i>
+						<i class="icon-arrow-down" ng-show="sortedBy('description', 'desc')" ng-click="switchSortDirection()"></i>
+					</th>
+					<th class="span1 table-hcenter">Angeboten</th>
+					<th class="span2 table-hcenter">Bearbeiten</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="meal in meals.items">
+    				<td class="table-vmiddle">{{meal.headline}}</td>
+    				<td class="table-vmiddle">{{meal.description}}</td>
+    				<td class="table-vmiddle table-hcenter">{{meal.offerItemsCount}}x</td>
+    				<td class="table-vmiddle table-hcenter">
+    					<button class="btn" type="button" ng-click="openMealDialog(meal)"><i class="icon-pencil"></i></button>
+    					<button class="btn" type="button" ng-disabled="meal.offerItemsCount > 0" ng-click="deleteMeal(meal)"><i class="icon-remove"></i></button>
+    				</td>
+    			</tr>
+    		</tbody>
+		</table>
+    </div>
+    <div class="container">
+    	<pagination page="currentPage" total-items="meals.totalItems" class="pagination" num-pages="meals.totalPages" max-size="10" boundary-links="true"
+				previous-text="&lt;" next-text="&gt;" on-select-page="loadMeals(page)" ng-show="$parent.meals.totalPages>1" first-text="&lt;&lt;" last-text="&gt;&gt;" />
+    </div>
+</div>

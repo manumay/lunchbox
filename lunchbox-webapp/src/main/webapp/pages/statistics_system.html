@@ -1,0 +1,63 @@
+<div class="loadingPanel" ng-class="{hidden:!loading}">
+	<div class="loading"><img src="img/loading.gif" valign="middle" alt="Loading" /></div>
+</div>
+<div id="alerts" ng-class="{hidden:loading}" class="container"></div>
+<div class="container" ng-init="loadStats()" ng-class="{hidden:loading}">
+	<div class="row-fluid">
+		<div class="span4">
+			<div class="portlet">
+				<dl class="dl-horizontal" ng-repeat="item in stats.namedValues">
+  					<dt>{{item.name}}</dt>
+  					<dd>{{item.value}}</dd>
+				</dl>
+			</div>
+			<div class="portlet" ng-hide="stats.greediestUsers.length == 0">
+				<h5>Die meisten Bestellungen</h5>
+				<table class="table">
+					<tbody>
+						<tr ng-repeat="greedyUser in stats.greediestUsers">
+							<td><strong>#{{$index+1}}</strong></td>
+							<td>{{greedyUser.name}}</td>
+							<td>{{greedyUser.value}}x</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="portlet">
+				<piechart ng-model="stats.menuDistribution" style="height: 180px;" />
+			</div>
+		</div>
+		<div class="span8">
+			<div class="portlet">
+				<h5>Ums&auml;tze der vergangenen Monate</h5>
+				<barchart ng-model="stats.salesByMonth" style="height: 250px;" />
+			</div>
+			<div class="portlet" ng-hide="stats.topUsers.length == 0">
+				<h5>Embleme</h5>
+				<table class="table">
+					<tbody>
+						<tr ng-repeat="topUser in stats.topUsers">
+							<td class="span1 table-vmiddle table-hcenter"><img ng-src="img/trophies/{{topUser.tag}}.png" alt="{{topUser.name}}"/></td>
+							<td class="table-vmiddle"><strong>{{topUser.name}}</strong></td>
+							<td class="table-vmiddle">{{topUser.userName}}</td>
+							<td class="table-vmiddle">{{topUser.description}}</td>
+							<td class="table-vmiddle"><strong>{{topUser.times}}x</strong></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="portlet" ng-hide="stats.popularMeals.length == 0">
+				<h5>Die beliebtesten Mahlzeiten</h5>
+				<table class="table">
+					<tbody>
+						<tr ng-repeat="meal in stats.popularMeals">
+							<td><strong>#{{$index+1}}</strong></td>
+							<td>{{meal.name}}</td>
+							<td>{{meal.value}}x</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

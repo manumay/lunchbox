@@ -1,0 +1,47 @@
+<div class="modal-header">
+	<h3>Benutzer</h3>
+</div>
+<div class="modal-body" ng-show="shouldDisplayErrorMessage()">
+	<div class="alert alert-error" style="margin-bottom: 0;">
+		<strong>Warnung!</strong> {{errorMessage}}
+	</div>
+</div>
+<div id="userDialog" class="modal-body">
+	<form name="userForm" class="modal-form">
+  		<fieldset>
+  			<div class="control-group" ng-class="{error:!userForm.loginName.$valid}">
+    			<label>Anmeldename</label>
+    			<input name="loginName" type="text" ng-model="user.loginName" placeholder="Anmeldename..." required />
+    		</div>
+    		<div class="control-group" ng-class="{error:!userForm.loginSecret.$valid}" >
+    			<label>Passwort</label>
+    			<input name="loginSecret" type="password" ng-model="user.loginSecret" placeholder="Passwort..." ng-required="isCreate()" />
+    		</div>
+    		<div class="control-group" ng-class="{error:!userForm.fullName.$valid}">
+    			<label>Voller Name</label>
+    			<input name="fullName" type="text" ng-model="user.fullName" placeholder="Voller Name..." class="input-xlarge" required />
+    		</div>
+    		<div class="control-group" ng-class="{error:!userForm.mail.$valid}">
+    			<label>Mail</label>
+    			<input name="mail" type="email" ng-model="user.mail" placeholder="Mail..." />
+    		</div>
+    		<div class="control-group" ng-class="{error:!userForm.personnelNumber.$valid}">
+    			<label>Personalnummer</label>
+    			<input name="personnelNumber" type="text" ng-model="user.personnelNumber" placeholder="Personalnummer..." />
+    		</div>
+    		<div class="control-group">
+    			<label class="checkbox"><input type="checkbox" ng-model="user.ordererRole">Besteller?</label>
+    		</div>
+    		<div class="control-group">
+    			<label class="checkbox"><input type="checkbox" ng-model="user.adminRole">Administrator?</label>
+    		</div>
+    		<div class="control-group">
+    			<label class="checkbox"><input type="checkbox" ng-model="user.active">Aktiv?</label>
+    		</div>
+    	</fieldset>
+    </form>
+</div>
+<div class="modal-footer">
+	<button id="cancelUser" ng-click="cancel()" class="btn">Abbrechen</button>
+	<button id="saveUser" ng-click="save(result)" class="btn btn-primary" ng-disabled="userForm.$invalid">Speichern</button>
+</div>

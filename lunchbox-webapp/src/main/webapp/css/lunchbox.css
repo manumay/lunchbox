@@ -1,0 +1,170 @@
+body {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #f5f5f5;
+}
+
+a {
+	cursor: pointer;
+}
+
+th a {
+	color: #000000;
+}
+
+.form-signin {
+	max-width: 300px;
+	padding: 19px 29px 29px;
+	margin: 0 auto 20px;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+}
+
+.form-signin .form-signin-heading,.form-signin .checkbox {
+	margin-bottom: 10px;
+}
+
+.form-signin input[type="text"],.form-signin input[type="password"] {
+	font-size: 16px;
+	height: auto;
+	margin-bottom: 15px;
+	padding: 7px 9px;
+}
+
+.login-alert {
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.uploadinfo {
+	display: none;
+	padding: 5px;
+}
+
+.offeritem {
+	padding: 10px 20px;
+	position: relative;
+	border-radius: 6px 6px 6px 6px;
+	border: 1px solid #EEEEEE;
+	background-color: #EEEEEE;
+	background-image: linear-gradient(to bottom, #EFEFEF, #EEEEEE);
+    background-repeat: repeat-x;
+	margin: 5px 0;
+}
+
+.portlet {
+	padding: 10px 20px;
+	position: relative;
+	border-radius: 6px 6px 6px 6px;
+	border: 1px solid #EEEEEE;
+	margin: 5px 0 20px 0;
+}
+
+.price {
+	font-size: 16px;
+	position: absolute;
+	right: 25px;
+	top: 50%;
+	margin-top: -8px;
+}
+
+.cancel {
+	font-size: 12px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.ordered {
+	border: 1px solid #0081C2;
+	background-color: #0081C2;
+    background-image: linear-gradient(to bottom, #0088CC, #0077B3);
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+}
+
+#alerts {
+	margin-top: 20px;
+}
+
+#root .sum {
+	font-weight: bold;
+	border-top: 1px solid #DDDDDD;
+}
+
+#root .table-hcenter {
+	text-align: center;
+}
+
+#root .table-hright {
+	text-align: right;
+}
+
+#root .table-vmiddle {
+	vertical-align: middle;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+.block {
+	background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+    margin: 15px 0;
+    padding: 45px 19px 14px;
+    position: relative;
+}
+
+.block-header {
+	background-color: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 0 4px 0;
+    color: #9DA0A4;
+    font-size: 16px;
+    font-weight: bold;
+    left: -1px;
+    padding: 3px 7px;
+    position: absolute;
+    top: -1px;
+}
+
+barchart, piechart {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#userDialog {
+    max-height: 600px;
+}
+
+.loadingPanel {
+	width: 16px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.loading {
+	top: 50%;
+	height: 12px;
+	margin-top: -6px;
+	position: absolute;
+	text-align: center;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.nowrap {
+	white-space: nowrap;
+}

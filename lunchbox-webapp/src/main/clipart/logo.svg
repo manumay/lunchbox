@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="4458.7417"
+   height="616.09027"
+   id="svg3006"
+   version="1.1"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="lunchbox-logo.svg"
+   inkscape:export-filename="/Users/mayer/Downloads/lunchbox-logo.png"
+   inkscape:export-xdpi="6.9748144"
+   inkscape:export-ydpi="6.9748144">
+  <defs
+     id="defs3008" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.1767767"
+     inkscape:cx="3468.9101"
+     inkscape:cy="303.64946"
+     inkscape:document-units="px"
+     inkscape:current-layer="g2989"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1152"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     fit-margin-top="50"
+     fit-margin-left="50"
+     fit-margin-right="50"
+     fit-margin-bottom="50" />
+  <metadata
+     id="metadata3011">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-63.423376,-216.60192)">
+    <g
+       transform="translate(177.59544,329.44052)"
+       id="g2989">
+      <path
+         sodipodi:type="arc"
+         style="fill:none;stroke:#000000;stroke-width:18.35337448;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path3041"
+         sodipodi:cx="-21.071428"
+         sodipodi:cy="213.1604"
+         sodipodi:rx="222.5"
+         sodipodi:ry="222.5"
+         d="m 201.42857,213.1604 c 0,122.88336 -99.61664,222.5 -222.499998,222.5 -122.883362,0 -222.500002,-99.61664 -222.500002,-222.5 0,-122.883356 99.61664,-222.4999996 222.500002,-222.4999996 122.883358,0 222.499998,99.6166436 222.499998,222.4999996 z"
+         transform="matrix(1.1107842,0,0,1.113877,216.59073,-42.227935)" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke:none"
+         id="path2360"
+         d="m 185.02338,114.95908 c 9.4417,9.44171 10.9478,28.1515 -0.20566,39.30496 l 159.37302,159.37301 c 22.62217,22.62217 -8.21455,53.45889 -30.83673,30.83672 L 153.981,185.10075 c -10.8616,10.8616 -28.32145,11.58387 -41.21126,-0.58125 L 19.840733,96.815165 c -7.85206,-7.410594 2.7924,-18.638992 11.32894,-10.739061 l 70.060547,64.835856 9.23604,-9.23605 -70.650427,-65.425746 c -7.28098,-6.742544 2.86045,-17.784224 10.91642,-10.326517 l 70.355477,65.130793 9.54392,-9.54391 -70.573457,-65.34878 c -7.60266,-7.039815 2.39249,-17.623882 10.60853,-10.018648 l 70.278517,65.053828 9.38998,-9.38999 -70.573457,-65.34877 c -7.52279,-6.965859 3.22894,-18.318164 11.0685,-10.478604 z"
+         sodipodi:nodetypes="ccsscsssccssccssccscc" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke:none"
+         id="path2362"
+         d="M 294.98006,67.000175 47.468013,314.51224 c -22.12527,22.12527 9.09812,52.69353 30.89583,30.89583 l 98.206937,-98.20696 16.45188,16.45188 149.3051,-149.30511 C 377.08303,79.592611 329.73532,32.244909 294.98006,67.000175 z"
+         sodipodi:nodetypes="sssccss" />
+      <text
+         xml:space="preserve"
+         style="font-size:131.76979065px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="568.85571"
+         y="370.77493"
+         id="text3830"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3832"
+           x="568.85571"
+           y="370.77493"
+           style="font-size:474.37130737px;font-weight:bold;font-family:X360 by Redge;-inkscape-font-specification:X360 by Redge Bold">LUNCHBOX 360</tspan></text>
+    </g>
+  </g>
+</svg>

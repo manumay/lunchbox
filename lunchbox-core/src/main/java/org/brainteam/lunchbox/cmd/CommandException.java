@@ -1,0 +1,1 @@
+package org.brainteam.lunchbox.cmd;public class CommandException extends Exception {	private static final long serialVersionUID = 1L;		public CommandException(Throwable t) {		super(t);	}		public CommandException(String msg, Throwable t) {		super(msg, t);	}}

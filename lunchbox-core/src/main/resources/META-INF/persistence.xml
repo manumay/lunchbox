@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
+	
+	<persistence-unit name="lunchbox">
+	    <non-jta-data-source>jdbc/DSLunchbox</non-jta-data-source>
+	
+	    <class>org.brainteam.lunchbox.domain.Journal</class>
+		<class>org.brainteam.lunchbox.domain.Meal</class>
+		<class>org.brainteam.lunchbox.domain.Offer</class>
+		<class>org.brainteam.lunchbox.domain.OfferItem</class>
+		<class>org.brainteam.lunchbox.domain.Order</class>
+		<class>org.brainteam.lunchbox.domain.User</class>
+		
+		<properties>
+		    <property name="eclipselink.ddl-generation" value="none" />
+			<property name="eclipselink.logging.level" value="FINE" />
+			<property name="eclipselink.weaving" value="false"/><!-- FIXME true wäre performanter -->
+			
+			<!-- http://www.eclipse.org/forums/index.php/t/200321/ -->
+			<!-- https://jira.springsource.org/browse/SPR-7753 -->
+			<property name="eclipselink.cache.shared.default" value="false" />
+			
+			<!-- schema validation - should be disabled on production -->
+			<property name="eclipselink.session.customizer" value="org.brainteam.lunchbox.util.DBSchemaIntegrityChecker" />
+		</properties>
+
+	</persistence-unit>
+	
+</persistence>

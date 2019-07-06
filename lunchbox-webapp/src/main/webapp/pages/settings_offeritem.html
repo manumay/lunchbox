@@ -1,0 +1,32 @@
+<div class="modal-header">
+	<h3>Angebot f&uuml;r den {{offer.date | date:'d. MMMM yyyy'}}</h3>
+</div>
+<div class="modal-body" ng-show="shouldDisplayErrorMessage()">
+	<div class="alert alert-error" style="margin-bottom: 0;">
+		<strong>Warnung!</strong> {{errorMessage}}
+	</div>
+</div>
+<div class="modal-body" ng-init="loadOptions()">
+	<form name="offerItemForm" class="modal-form">
+  		<fieldset>
+  			<div class="control-group" ng-class="{error:!offerItemForm.name.$valid}">
+    			<label>Name</label>
+    			<input name="name" type="text" class="input-xlarge" ng-model="offerItem.name" placeholder="Name..." required />
+    		</div>
+			<div class="control-group" ng-class="{error:!offerItemForm.meal.$valid}">
+    			<label>Mahlzeit</label>
+    			<select name="meal" ng-model="offerItem.mealId" class="input-xxlarge"
+    				ng-options="m.value as m.text for m in mealOptions" required>
+    			</select>
+    		</div>
+    		<div class="control-group" ng-class="{error:!offerItemForm.priceInCents.$valid}">
+    			<label>Preis (in Cents)</label>
+    			<input name="priceInCents" type="number" class="input-xsmall" ng-model="offerItem.priceInCents" placeholder="Preis in Cents..." required />
+    		</div>
+    	</fieldset>
+    </form>
+</div>
+<div class="modal-footer">
+	<button ng-click="cancel()" class="btn">Abbrechen</button>
+	<button ng-click="save(result)" class="btn btn-primary" ng-disabled="offerItemForm.$invalid">Speichern</button>
+</div>

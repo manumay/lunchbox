@@ -1,0 +1,1 @@
+package org.brainteam.lunchbox.out;import org.brainteam.lunchbox.domain.User;public interface Mailer {		void sendTo(MailData mail, String[] to, String[] cc, String[] bcc) throws MailException;		void sendTo(MailData mail, String... recipients) throws MailException;	void sendToUsers(MailData mail, User... user) throws MailException;	}

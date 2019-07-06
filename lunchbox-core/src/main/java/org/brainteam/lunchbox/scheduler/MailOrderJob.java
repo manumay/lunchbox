@@ -1,0 +1,1 @@
+package org.brainteam.lunchbox.scheduler;import org.brainteam.lunchbox.cmd.MailOrderCommand;public class MailOrderJob extends BackgroundActionJob {		public MailOrderJob() {		super(MailOrderCommand.class);	}}

@@ -1,0 +1,40 @@
+<div class="modal-header">
+	<h3>Bestellung</h3>
+</div>
+<div class="modal-body" ng-show="shouldDisplayErrorMessage()">
+	<div class="alert alert-error" style="margin-bottom: 0;">
+		<strong>Warnung!</strong> {{errorMessage}}
+	</div>
+</div>
+<div class="modal-body" ng-init="loadOptions()">
+	<form name="orderForm" class="modal-form">
+  		<fieldset>
+			<div class="control-group" ng-class="{error:!orderForm.orderer.$valid}">
+    			<label>Benutzer</label>
+    			<select name="orderer" ng-model="order.detail.userId" class="input-xlarge"
+    				ng-options="u.value as u.text for u in userOptions" required>
+    			</select>
+    		</div>
+    		<div class="control-group" ng-class="{error:!orderForm.offerItem.$valid}">
+    			<label>Angebot</label>
+    			<select name="offerItem" ng-model="order.offerItem.id" class="input-xxlarge"
+    				ng-options="oi.value as oi.text for oi in offerItemOptions" required>
+    			</select>
+    		</div>
+    		<div class="control-group" ng-class="{error:!orderForm.times.$valid}">
+    			<label>Anzahl</label>
+    			<select name="times" ng-model="order.detail.times" class="input-mini" required>
+    				<option>1</option>
+    				<option>2</option>
+    				<option>3</option>
+    				<option>4</option>
+    				<option>5</option>
+    			</select>
+    		</div>
+    	</fieldset>
+    </form>
+</div>
+<div class="modal-footer">
+	<button ng-click="cancel()" class="btn">Abbrechen</button>
+	<button ng-click="save(result)" class="btn btn-primary" ng-disabled="orderForm.$invalid">Speichern</button>
+</div>

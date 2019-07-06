@@ -1,0 +1,64 @@
+<div class="loadingPanel" ng-class="{hidden:!loading}">
+	<div class="loading"><img src="img/loading.gif" valign="middle" alt="Loading" /></div>
+</div>
+<div id="alerts" class="container" ng-class="{hidden:loading}"></div>
+<div id="users" class="container" ng-class="{hidden:loading}" ng-init="loadUsers()">
+    <div class="container">
+        <div class="row-fluid">
+        	<div class="span6"><h3>Benutzer</h3></div>
+        	<div class="span6 text-right">
+        		<button id="addUser" class="btn" type="button" ng-click="openUserDialog()" style="margin: 10px 0;"><i class="icon-plus"></i></button>
+        	</div>
+        </div>
+		<div class="container">
+			<table class="table table-bordered table-hover table-striped">
+				<thead>
+					<tr>
+						<th>
+							<a ng-click="sortBy('loginName')">Anmeldename</a>
+							<i class="icon-arrow-up" ng-show="sortedBy('loginName', 'asc')" ng-click="switchSortDirection()"></i>
+							<i class="icon-arrow-down" ng-show="sortedBy('loginName', 'desc')" ng-click="switchSortDirection()"></i>
+						</th>
+						<th>
+							<a ng-click="sortBy('fullName')">Name</a>
+							<i class="icon-arrow-up" ng-show="sortedBy('fullName', 'asc')" ng-click="switchSortDirection()"></i>
+							<i class="icon-arrow-down" ng-show="sortedBy('fullName', 'desc')" ng-click="switchSortDirection()"></i>
+						</th>
+						<th class="table-hcenter nowrap">
+							<a ng-click="sortBy('ordererRole')">Besteller?</a>
+							<i class="icon-arrow-up" ng-show="sortedBy('ordererRole', 'asc')" ng-click="switchSortDirection()"></i>
+							<i class="icon-arrow-down" ng-show="sortedBy('ordererRole', 'desc')" ng-click="switchSortDirection()"></i>
+						</th>
+						<th class="table-hcenter nowrap">
+							<a ng-click="sortBy('adminRole')">Administrator?</a>
+							<i class="icon-arrow-up" ng-show="sortedBy('adminRole', 'asc')" ng-click="switchSortDirection()"></i>
+							<i class="icon-arrow-down" ng-show="sortedBy('adminRole', 'desc')" ng-click="switchSortDirection()"></i>
+						</th>
+						<th class="table-hcenter nowrap">
+							<a ng-click="sortBy('active')">Aktiv?</a>
+							<i class="icon-arrow-up" ng-show="sortedBy('active', 'asc')" ng-click="switchSortDirection()"></i>
+							<i class="icon-arrow-down" ng-show="sortedBy('active', 'desc')" ng-click="switchSortDirection()"></i>
+						</th>
+						<th class="table-hcenter">Bearbeiten</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="user in users.items">
+						<td class="span4 table-vmiddle">{{user.loginName}}</td>
+						<td class="span4 table-vmiddle">{{user.fullName}}</td>
+						<td class="span1 table-vmiddle table-hcenter"><input type="checkbox" ng-model="user.ordererRole" ng-disabled="true" /></td>
+						<td class="span1 table-vmiddle table-hcenter"><input type="checkbox" ng-model="user.adminRole" ng-disabled="true" /></td>
+						<td class="span1 table-vmiddle table-hcenter"><input type="checkbox" ng-model="user.active" ng-disabled="true" /></td>
+						<td class="span1 table-hcenter">
+							<button class="btn" type="button" ng-click="openUserDialog(user)"><i class="icon-pencil"></i></button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+        </div>
+        <div class="container">
+    		<pagination page="currentPage" total-items="users.totalItems" class="pagination" num-pages="users.totalPages" max-size="10" boundary-links="true"
+				previous-text="&lt;" next-text="&gt;" on-select-page="loadUsers(page)" ng-show="$parent.users.totalPages>1" first-text="&lt;&lt;" last-text="&gt;&gt;" />
+        </div>
+    </div>
+</div>

@@ -1,0 +1,1 @@
+package org.brainteam.lunchbox.out;public class MailException extends Exception {	private static final long serialVersionUID = 6337270282656621504L;		public MailException(Throwable cause) {		super(cause);	}}

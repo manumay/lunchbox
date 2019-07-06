@@ -1,0 +1,1 @@
+package org.brainteam.lunchbox.in;import java.io.File;import java.io.IOException;import java.net.URL;public interface Downloader {	File download(URL source) throws IOException;	}

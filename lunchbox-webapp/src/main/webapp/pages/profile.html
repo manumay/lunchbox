@@ -1,0 +1,33 @@
+<div id="alerts" class="container"></div>
+<div class="container">
+	<div class="container">
+		<form name="profileForm">
+  			<fieldset>
+    			<legend>Mein Profil</legend>
+    			<label>Anmeldename</label>
+    			<input type="text" name="loginName" ng-model="profile.loginName" ng-class="{error:!profileForm.loginName.$valid}"
+    				 placeholder="Anmeldename..." required />
+    			<label>Passwort</label>
+    			<input name="password" type="password" ng-model="profile.loginSecret" ng-class="{error:!profileForm.password.$valid}" 
+    				placeholder="Passwort..." />
+    			<label>Voller Name</label>
+    			<input name="fullName" type="text" ng-model="profile.fullName" placeholder="Voller Name..." 
+    				ng-class="{error:!profileForm.fullName.$valid}" class="input-xlarge" />
+    			<label>Mail</label>
+    			<input name="mail" type="text" ng-model="profile.mail" placeholder="Mail..." class="input-xlarge" 
+    				ng-class="{error:!profileForm.mail.$valid}" required />
+    			<label>Personalnummer</label>
+    			<input type="text" ng-model="profile.personnelNumber" placeholder="Personalnummer..." readonly />
+    			<br /><br />
+    			<div class="row-fluid">
+    				<div class="span2">
+    					<button id="saveProfile" ng-click="saveProfile()" ng-disabled="profileForm.$invalid || uiLocked" class="btn btn-primary">&Uuml;bernehmen</button>
+    				</div>
+    				<div class="span6">
+						<div class="saveProfileInfo" ng-show="uiLocked"><img src="/img/loading.gif" style="margin-right:7px;" /> Profil wird gespeichert</div>
+					</div>
+				</div>
+  			</fieldset>
+		</form>
+	</div>
+</div>

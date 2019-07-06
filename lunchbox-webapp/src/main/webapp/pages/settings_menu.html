@@ -1,0 +1,23 @@
+<div id="alerts" class="container"></div>
+<div id="settings" class="container">
+	<div class="container">
+        <h3>Speiseplan</h3>
+        <form id="uploadmenu" action="/disp/uploadmenu" method="POST" target="upload" enctype="multipart/form-data" class="uploadForm">
+        	<div class="container">
+        		<div class="fileupload fileupload-new" data-provides="fileupload">
+  				<div class="input-append">
+    				<div class="uneditable-input span3"><i class="icon-file fileupload-exists"></i> <span class="fileupload-preview"></span></div><span class="btn btn-file"><span class="fileupload-new">Datei ausw&auml;hlen</span><span class="fileupload-exists">&Auml;ndern</span><input name="menu" type="file" /></span>
+  				</div>
+  				<iframe name="upload" style="display:none;"></iframe>
+        	</div>
+        	<div class="row-fluid" style="margin-bottom:10px;">
+        		<div class="span2">
+					<button id="upload" class="btn btn-primary uploadbutton" ng-click="uploadMenu()" type="button"><i class="icon-upload icon-white"></i> Hochladen</button>
+				</div>
+				<div class="span6">
+					<div class="uploadinfo"><img src="/img/loading.gif" style="margin-right:7px;" /> Speiseplan wird hochgeladen</div>
+				</div>
+			</div>
+		</form>
+    </div>
+</div>

@@ -1,0 +1,139 @@
+{
+  "dailyOffers" : [ {
+    "date" : 1362956400000,
+    "meals" : [ {
+      "type" : "Menü 1",
+      "headline" : "Feiner Erbseneintopf",
+      "description" : "mit frischen Gemüse, Kasslerwürfel, gerauchte Wurst ,Brötchen",
+      "ingredients" : "Zusatzstoffe: 1,2,3,4,5",
+      "priceInCents" : 395
+    }, {
+      "type" : "Menü 2",
+      "headline" : "Gefüllte Schweineroulade",
+      "description" : "Pfeffer-Pilzrahmsoße, Butterspätzle, Salat",
+      "ingredients" : "Zusatzstoffe:     1,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Menü 3",
+      "headline" : "Kartoffelgnocchi",
+      "description" : "in Käsesoße überbacken mit Gemüsestreifen, Salat",
+      "ingredients" : "Zusatzstoffe: 1,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Salat",
+      "headline" : "Angemachte Salate mit Gebratene Geflügelwürfel und Brötchen",
+      "description" : "",
+      "ingredients" : "",
+      "priceInCents" : 395
+    } ]
+  }, {
+    "date" : 1363042800000,
+    "meals" : [ {
+      "type" : "Menü 1",
+      "headline" : "Schwäbische Maultaschen",
+      "description" : "an Speck-Zwiebelsoße, Kartoffelsalat und Blattsalat, Dessert",
+      "ingredients" : "Zusatzstoffe: 1,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Menü 2",
+      "headline" : "ASIA NOODELS AKTION",
+      "description" : "Gebratenes Rindfleisch, Currysoße, Ramennoodels, grüne Bohnen mit roten Zwiebeln, Dessert",
+      "ingredients" : "Zusatzstoffe: 1,4,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Menü 3",
+      "headline" : "Gedünstetes Seelachsfilet",
+      "description" : "in Garnelen-Dill-Soße, Butterreis, Salat, Dessert",
+      "ingredients" : "Zusatzstoffe: 1,6 1,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Salat",
+      "headline" : "Angemachte Salate mit Gebratene Geflügelwürfel und Brötchen",
+      "description" : "",
+      "ingredients" : "",
+      "priceInCents" : 395
+    } ]
+  }, {
+    "date" : 1363129200000,
+    "meals" : [ {
+      "type" : "Menü 1",
+      "headline" : "Spaghetti     „Bolognese Art“",
+      "description" : "Hackfleischsoße, geriebener Käse, Salat",
+      "ingredients" : "Zusatzstoffe: 1,2,3,4,5,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Menü 2",
+      "headline" : "ASIA NOODELS AKTION",
+      "description" : "Schweinesteak an scharfer Honey-Chilisoße, buntes Asiagemüse, Mie Nudeln",
+      "ingredients" : "Zusatzstoffe: 1,4,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Menü 3",
+      "headline" : "Süßer Kirschmichel",
+      "description" : "mit Mandeln und Rosinen, heiße Vanillesoße",
+      "ingredients" : "Zusatzstoffe: 1,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Salat",
+      "headline" : "Angemachte Salate mit Gebratene Geflügelwürfel und Brötchen",
+      "description" : "",
+      "ingredients" : "",
+      "priceInCents" : 395
+    } ]
+  }, {
+    "date" : 1363215600000,
+    "meals" : [ {
+      "type" : "Menü 1",
+      "headline" : "Deftiger Jägertopf",
+      "description" : "mit Schweinefleisch, Paprika, Pilzen und Kräutern, Schwenkkartoffeln, Salat",
+      "ingredients" : "Zusatzstoffe: 1,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Menü 2",
+      "headline" : "ASIA NOODELS AKTION",
+      "description" : "Feine Hähnchenbrust mit Sesam, Rote Currysoße, Reisnudeln, Salat",
+      "ingredients" : "Zusatzstoffe: 1,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Menü 3",
+      "headline" : "Schupfnudel-Pfanne",
+      "description" : "mit Gemüse und Hirtenkäse, Salat",
+      "ingredients" : "Zusatzstoffe: 1,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Salat",
+      "headline" : "Angemachte Salate mit Gebratene Geflügelwürfel und Brötchen",
+      "description" : "",
+      "ingredients" : "",
+      "priceInCents" : 395
+    } ]
+  }, {
+    "date" : 1363302000000,
+    "meals" : [ {
+      "type" : "Menü 1",
+      "headline" : "Russische Eier",
+      "description" : "mit Kartoffelsalat, Fleischsalat, Salami, Tomaten, Gurke dazu Brötchen, Dessert",
+      "ingredients" : "Zusatzstoffe: 1,2,3,4,5,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Menü 2",
+      "headline" : "Paniertes Putenschnitzel",
+      "description" : "Geflügelsoße,Pommes frites, Außenstelle: Nudeln, Salat, Dessert",
+      "ingredients" : "Zusatzstoffe: 1,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Menü 3",
+      "headline" : "Seelachsfilet    „Müllerin Art“",
+      "description" : "braune Butter, Petersilienkartoffeln,Zitrone,Salat, Dessert",
+      "ingredients" : "Zusatzstoffe: 1,6",
+      "priceInCents" : 395
+    }, {
+      "type" : "Salat",
+      "headline" : "Angemachte Salate mit Gebratene Geflügelwürfel und Brötchen",
+      "description" : "",
+      "ingredients" : "",
+      "priceInCents" : 395
+    } ]
+  } ],
+  "periodicOffers" : [ ]
+}

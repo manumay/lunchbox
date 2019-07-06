@@ -1,0 +1,1 @@
+package org.brainteam.lunchbox.core;import java.io.File;public interface Directories {	File getDataDir();		File getTempDir();		File getTemplatesDir();		File getConfigDir();		File getBackupDir();		File getPluginDir();		File getPluginCacheDir();	}

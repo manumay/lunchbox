@@ -1,0 +1,36 @@
+<div class="loadingPanel" ng-class="{hidden:!loading}">
+	<div class="loading"><img src="img/loading.gif" valign="middle" alt="Loading" /></div>
+</div>
+<div id="alerts" class="container" ng-init="loadOffers()" ng-class="{hidden:loading}"></div>
+<div ng-repeat="offer in offers.offers | orderBy:'date'"  ng-class="{hidden:loading}">
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="span10">
+				<h3>{{offer.date | date:'EEEE, d. MMMM'}}</h3>
+			</div>
+			<div class="span2" style="position: relative; height: 60px;">
+				<div class="cancel text-right" ng-show="isSomethingOrdered(offer)">
+					<a class="btn btn-link btn-small" ng-click="cancel(offer)"><i class="icon-remove"></i> Abbestellen</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<div ng-repeat="item in offer.items | orderBy:'name'">
+				<div class="offeritem span12" ng-class="{ordered:isOrdered(offer, item)}">
+					<div class="span10">
+						<label class="radio">
+	  						<input type="radio" name="{{offer.date | date:'yyyyMMdd'}}" ng-model="offers.offerOrders[offer.id].offerItemId" value="{{item.id}}" ng-disabled="isLocked(offer)" ng-click="order(offer, item)" />
+	  						<h5>{{item.name}}: {{item.headline}}</h5>
+	  						<p>{{item.description}}</p>
+						</label>
+					</div>
+					<div class="span2 text-right">
+						<div class="price"><em>{{item.priceInCents / 100 | currency}}</em></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

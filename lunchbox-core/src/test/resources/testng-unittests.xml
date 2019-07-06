@@ -1,0 +1,1 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" ><suite name="Unit-Tests" verbose="1">	<test name="Unit-Tests">		<groups>			<run>				<include name="unit" />				<exclude name="broken" />			</run>		</groups>		<packages>			<package name="org.brainteam.lunchbox.in.*"></package>		</packages>	</test></suite>

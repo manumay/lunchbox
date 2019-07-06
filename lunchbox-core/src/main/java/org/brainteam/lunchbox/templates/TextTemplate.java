@@ -1,0 +1,1 @@
+package org.brainteam.lunchbox.templates;import java.util.Map;public interface TextTemplate {		String getText(Map<String, Object> params) throws TextTemplateException;}

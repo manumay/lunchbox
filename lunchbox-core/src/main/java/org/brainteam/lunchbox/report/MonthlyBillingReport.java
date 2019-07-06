@@ -1,0 +1,1 @@
+package org.brainteam.lunchbox.report;import java.io.OutputStream;import java.util.List;import org.brainteam.lunchbox.json.JsonOrdersBilling;public interface MonthlyBillingReport {	void write(OutputStream out, List<JsonOrdersBilling> json);	}

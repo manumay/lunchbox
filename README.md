@@ -9,12 +9,12 @@ Jetty web application for ordering lunch from a deliverer. Supports the followin
 * several other statistics and reports
 * administration user interface
 
-Compile the application
+Compile the application using Maven:
 ```
 mvn clean install
 ```
   
-To run the web application locally please move to the lunchbox-webapp folder and use the Jetty Plugin:
+Run the web application locally using Maven:
 ```
 cd lunchbox-webapp/
 mvn jetty:start

@@ -9,7 +9,7 @@ Jetty web application for ordering lunch from a deliverer. Supports the followin
 * several other statistics and reports
 * administration user interface
 
-´´´
+```
 mvn clean install
 ```
   

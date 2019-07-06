@@ -1,4 +1,4 @@
-# Lunchbox
+# Lunchbox 360
 
 Jetty web application for ordering lunch from a deliverer. Supports the following features:
 * listing of available meals on a daily basis

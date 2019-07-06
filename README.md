@@ -10,8 +10,8 @@ Jetty web application for ordering lunch from a deliverer. Supports the followin
 * administration user interface
 
 To compile the application please run:
-  mvn clean install
+    mvn clean install
   
 To run the web application locally please move to the lunchbox-webapp folder and use the Jetty Plugin:
-  cd lunchbox-webapp/
-  mvn jetty:start
+    cd lunchbox-webapp/
+    mvn jetty:start
